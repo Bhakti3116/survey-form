@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Survey Form</title>
+</head>
+<body>
+
+  <h2>Customer Survey Form</h2>
+
+  <form>
+
+    <!-- Name -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- Age -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="10" max="100">
+    <br><br>
+
+    <!-- Gender -->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+    <br><br>
+
+    <!-- Satisfaction -->
+    <label>How satisfied are you with our service?</label><br>
+    <select name="satisfaction">
+      <option value="very_satisfied">Very Satisfied</option>
+      <option value="satisfied">Satisfied</option>
+      <option value="neutral">Neutral</option>
+      <option value="dissatisfied">Dissatisfied</option>
+      <option value="very_dissatisfied">Very Dissatisfied</option>
+    </select>
+    <br><br>
+
+    <!-- Comments -->
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="Submit Survey">
+
+  </form>
+
+</body>
+</html>
